@@ -104,6 +104,21 @@ Estas herramientas están planeadas y se irán liberando progresivamente:
 
 ---
 
+## Creando token 
+Para usar correctamente el programa con el CLI de GitHub, deberás crear un **token de acceso personal** siguiendo estos pasos:
+
+1. Visita el enlace: [https://github.com/settings/tokens](https://github.com/settings/tokens).
+2. Haz clic en "Generate new token" (puede decir "Classic token").
+3. Asigna un nombre al token y elige una expiración (recomendado: "No expiration" solo si es seguro).
+4. Marca los permisos necesarios, **mínimo activa el permiso `repo` y `admin`** para permitir la gestión de la visibilidad de los repositorios y la eliminación de los mismos a gestionar.
+5. Genera el token y **cópialo inmediatamente** (no podrás volver a verlo).
+6. Ejecuta el programa y cuando se te solicite, ingresa tu **nombre de usuario de GitHub** y **pega el token generado** cuando se te pida el "Token de GitHub".
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/55b37353-1497-40c6-9d21-df7724859027" alt="image termux github CLI API" width="50%">
+</p>
+
+
 ## ✨ Contribuciones
 
 Este proyecto está pensado para desarrolladores que trabajan desde el móvil o en entornos CLI. Si tienes ideas, mejoras o quieres colaborar, ¡bienvenido!
