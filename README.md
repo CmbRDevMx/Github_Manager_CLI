@@ -115,7 +115,7 @@ Para usar correctamente el programa con el CLI de GitHub, deberás crear un **to
 6. Ejecuta el programa y cuando se te solicite, ingresa tu **nombre de usuario de GitHub** y **pega el token generado** cuando se te pida el "Token de GitHub".
 ________________________________________________
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/55b37353-1497-40c6-9d21-df7724859027" alt="image termux github CLI API" width="50%">
+  <img src="https://github.com/user-attachments/assets/55b37353-1497-40c6-9d21-df7724859027" alt="image termux github CLI API" width="100%">
 </p>
 
 ![github_token termux cli git](https://github.com/user-attachments/assets/4b6f4646-4581-4212-be85-47297ea5a508)
