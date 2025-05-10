@@ -16,14 +16,71 @@ Herramientas en Python diseñadas para gestionar tu cuenta de GitHub directament
 - Permite eliminar forks de forma masiva o selectiva.
 - Usa las mismas credenciales guardadas.
 - Registro de acciones en el mismo archivo de logs.
+Aquí tienes la **guía adaptada para el CLI de GitHub Manager (`.gh-bins`)** en lugar de `.woff2`, manteniendo el mismo estilo claro y profesional:
+
+---
+
+# Github Manager CLI
+
+Script para Termux: Configura binarios personalizados con un PATH exclusivo
+
+### 🚀 Guía Rápida: Configurar `.gh-bins` en Termux
+
+---
+
+1. **Instala `curl`** (si no lo tienes; en versiones recientes de Termux ya viene por defecto):
+
+   ```bash
+   pkg install curl -y
+   ```
+
+2. **Ejecuta el instalador en un solo paso**:
+
+   ```bash
+   curl -sL https://raw.githubusercontent.com/CmbRDevMx/Github_Manager_CLI/main/gh-setup.sh | bash
+   ```
+
+3. **Reinicia Termux o aplica los cambios al shell**:
+
+   * Para Bash:
+
+     ```bash
+     source ~/.bashrc
+     ```
+
+   * Para Zsh:
+
+     ```bash
+     source ~/.zshrc
+     ```
+
+4. ✅ ¡Listo! Ahora puedes ejecutar los binarios del CLI de GitHub Manager directamente desde cualquier ubicación.
+
+---
+
+## 🛠 Solución de problemas:
+
+* Si los comandos no funcionan, asegúrate de que los binarios tengan permisos de ejecución:
+
+  ```bash
+  chmod +x ~/.gh-bins/*
+  ```
+
+* Luego **cierra y vuelve a abrir Termux**, o aplica los cambios manualmente como se indica arriba.
+
+* 🔁 **¿Quieres actualizar?**
+  Solo vuelve a ejecutar el instalador del paso 2, y tendrás la última versión.
+
+---
+
 
 ## 🧭 Uso
 
 Asegúrate de tener Python y Termux instalados. Luego:
 
 ```bash
-./repos.py   # Para gestionar visibilidad de repositorios
-./forks.py   # Para eliminar forks
+repos  # Para gestionar visibilidad de repositorios
+forks   # Para eliminar forks
 ````
 
 ## 🔒 Seguridad
