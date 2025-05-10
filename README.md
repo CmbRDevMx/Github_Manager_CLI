@@ -1,4 +1,19 @@
 # 🛠️ GitHub Manager CLI Tools for Termux
+## 🧭 Menú de Navegación
+
+- [🛠️ GitHub Manager CLI Tools for Termux](#-github-manager-cli-tools-for-termux)
+- [✅ Herramientas actuales](#-herramientas-actuales)
+  - [`repos.py` - Gestor de repositorios](#repospy---gestor-de-repositorios)
+  - [`forks.py` - Gestor de forks](#forkspy---gestor-de-forks)
+- [🚀 Guía Rápida: Configurar `.gh-bins` en Termux](#-guía-rápida-configurar-gh-bins-en-termux)
+- [🛠 Solución de problemas](#-solución-de-problemas)
+- [🧭 Uso](#-uso)
+- [🔒 Seguridad](#-seguridad)
+- [🧪 Funcionalidades futuras (en desarrollo)](#-funcionalidades-futuras-en-desarrollo)
+- [Creando token](#creando-token)
+- [✨ Contribuciones](#-contribuciones)
+- [🧑‍💻 Autor](#-autor)
+
 
 Herramientas en Python diseñadas para gestionar tu cuenta de GitHub directamente desde Termux, usando autenticación persistente, consola interactiva y logging detallado. Ideal para desarrolladores móviles, automatización o administración rápida de cuentas.
 
@@ -16,17 +31,8 @@ Herramientas en Python diseñadas para gestionar tu cuenta de GitHub directament
 - Permite eliminar forks de forma masiva o selectiva.
 - Usa las mismas credenciales guardadas.
 - Registro de acciones en el mismo archivo de logs.
-Aquí tienes la **guía adaptada para el CLI de GitHub Manager (`.gh-bins`)** en lugar de `.woff2`, manteniendo el mismo estilo claro y profesional:
 
----
-
-# Github Manager CLI
-
-Script para Termux: Configura binarios personalizados con un PATH exclusivo
-
-### 🚀 Guía Rápida: Configurar `.gh-bins` en Termux
-
----
+## 🚀 Guía Rápida: Configurar `.gh-bins` en Termux
 
 1. **Instala `curl`** (si no lo tienes; en versiones recientes de Termux ya viene por defecto):
 
@@ -56,9 +62,7 @@ Script para Termux: Configura binarios personalizados con un PATH exclusivo
 
 4. ✅ ¡Listo! Ahora puedes ejecutar los binarios del CLI de GitHub Manager directamente desde cualquier ubicación.
 
----
-
-## 🛠 Solución de problemas:
+## 🛠 Solución de problemas
 
 * Si los comandos no funcionan, asegúrate de que los binarios tengan permisos de ejecución:
 
@@ -71,21 +75,16 @@ Script para Termux: Configura binarios personalizados con un PATH exclusivo
 * 🔁 **¿Quieres actualizar?**
   Solo vuelve a ejecutar el instalador del paso 2, y tendrás la última versión.
 
----
-
-
 ## 🧭 Uso
 
 ```bash
 repos  # Para gestionar visibilidad de repositorios
 forks   # Para eliminar forks
-````
+```
 
 ## 🔒 Seguridad
 
 Las credenciales se almacenan en `~/.github_manager/config.json` con permisos restringidos. El archivo de logs se guarda en `~/github_manager.log`.
-
----
 
 ## 🧪 Funcionalidades futuras (en desarrollo)
 
@@ -102,8 +101,6 @@ Estas herramientas están planeadas y se irán liberando progresivamente:
 | `readme.py`              | Editor CLI de README.md con vista previa y commit automático |
 | `token_scope_checker.py` | Verifica los permisos reales del token personal              |
 
----
-
 ## Creando token 
 Para usar correctamente el programa con el CLI de GitHub, deberás crear un **token de acceso personal** siguiendo estos pasos:
 
@@ -113,19 +110,17 @@ Para usar correctamente el programa con el CLI de GitHub, deberás crear un **to
 4. Marca los permisos necesarios, **mínimo activa el permiso `repo` y `admin`** para permitir la gestión de la visibilidad de los repositorios y la eliminación de los mismos a gestionar.
 5. Genera el token y **cópialo inmediatamente** (no podrás volver a verlo).
 6. Ejecuta el programa y cuando se te solicite, ingresa tu **nombre de usuario de GitHub** y **pega el token generado** cuando se te pida el "Token de GitHub".
-________________________________________________
+__________________________________
 <p align="center">
   <img src="https://github.com/user-attachments/assets/55b37353-1497-40c6-9d21-df7724859027" alt="image termux github CLI API" width="100%">
 </p>
 
 ![github_token termux cli git](https://github.com/user-attachments/assets/4b6f4646-4581-4212-be85-47297ea5a508)
-_____________________________________________________
+______________________________________
 
 ## ✨ Contribuciones
 
 Este proyecto está pensado para desarrolladores que trabajan desde el móvil o en entornos CLI. Si tienes ideas, mejoras o quieres colaborar, ¡bienvenido!
-
----
 
 ## 🧑‍💻 Autor
 
