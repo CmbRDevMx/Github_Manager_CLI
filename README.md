@@ -76,8 +76,6 @@ Script para Termux: Configura binarios personalizados con un PATH exclusivo
 
 ## 🧭 Uso
 
-Asegúrate de tener Python y Termux instalados. Luego:
-
 ```bash
 repos  # Para gestionar visibilidad de repositorios
 forks   # Para eliminar forks
