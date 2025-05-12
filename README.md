@@ -6,6 +6,7 @@
   - [`repos.py` - Gestor de repositorios](#repospy---gestor-de-repositorios)
   - [`forks.py` - Gestor de forks](#forkspy---gestor-de-forks)
   - [`stars-git.py` - Gestor de Estrellas](#stars-gitpy---gestor-de-estrellas)
+  - [`subir.py` - Gestor de comits](#subir.py---gestor-de-estrellas)
 
 - [🚀 Guía Rápida: Configurar `.gh-bins` en Termux](#-guía-rápida-configurar-gh-bins-en-termux)
 - [🛠 Solución de problemas](#-solución-de-problemas)
@@ -39,6 +40,18 @@ Herramientas en Python diseñadas para gestionar tu cuenta de GitHub directament
 - permite Eliminar Estrellas a repositorios.
 - Usa las mismas credenciales guardadas
 - Registro de acciones en el mismo archivo de logs.
+
+### `subir.py` - Gestor de Comits
+- Detecta a tu sincronización ssh para subir csmbios de una forma más rapida.rapida.
+- Deberás configurar tu clave ssh antes de usarlo.
+
+### `gh-cli-update` - Actualiza binarios
+- Sincroniza los últimos binarios del repositorio en Termux.
+
+### `git-ssh` Configuración de clave ssh
+- Gebera tu clave única para activar ssh en github.
+
+
 
 ## 🚀 Guía Rápida: Configurar `.gh-bins` en Termux
 
@@ -81,14 +94,21 @@ Herramientas en Python diseñadas para gestionar tu cuenta de GitHub directament
 * Luego **cierra y vuelve a abrir Termux**, o aplica los cambios manualmente como se indica arriba.
 
 * 🔁 **¿Quieres actualizar?**
-  Solo vuelve a ejecutar el instalador del paso 2, y tendrás la última versión.
+  Ejecuta el comando `gh-cli-update` y tendrás la última versión. (Se creara una copia de los binarios anteriores .git-bins-ULTIMA-FECHA) por seguridad y respaldo. También puedes eliminarla si no te interesa.
 
 ## 🧭 Uso
 
 ```bash
 repos     # Para gestionar visibilidad de repositorios
 forks     # Para eliminar forks
+
 stars-git # Gestor de Estrellas
+
+gh-cli-update # Actualiza los binarios de tu entorno a las últimas versiones.
+
+git-ssh # Configura el ssh y genera tu clave para ponerla en Github SSH Ajustes 
+
+subir # Sube y pushea commits de tus repositoiros clonados con SSH de forma rapida
 ```
 
 ## 🔒 Seguridad
