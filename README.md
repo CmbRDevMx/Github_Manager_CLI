@@ -32,6 +32,12 @@ Herramientas en Python diseñadas para gestionar tu cuenta de GitHub directament
 - Usa las mismas credenciales guardadas.
 - Registro de acciones en el mismo archivo de logs.
 
+### `stars-git` - Gestor de Estrellas
+- Detecta a todos los repositorios a los cuales has dado estrellas.
+- permite Eliminar Estrellas a repositorios.
+- Usa las mismas credenciales guardadas
+- Registro de acciones en el mismo archivo de logs.
+
 ## 🚀 Guía Rápida: Configurar `.gh-bins` en Termux
 
 1. **Instala `curl`** (si no lo tienes; en versiones recientes de Termux ya viene por defecto):
@@ -78,8 +84,9 @@ Herramientas en Python diseñadas para gestionar tu cuenta de GitHub directament
 ## 🧭 Uso
 
 ```bash
-repos  # Para gestionar visibilidad de repositorios
-forks   # Para eliminar forks
+repos     # Para gestionar visibilidad de repositorios
+forks     # Para eliminar forks
+stars-git # Gestor de Estrellas
 ```
 
 ## 🔒 Seguridad
