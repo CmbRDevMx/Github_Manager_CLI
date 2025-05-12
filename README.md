@@ -16,36 +16,59 @@
 Herramientas en Python diseñadas para gestionar tu cuenta de GitHub directamente desde Termux, usando autenticación persistente, consola interactiva y logging detallado. Ideal para desarrolladores móviles, automatización o administración rápida de cuentas.
 
 ## ✅ Herramientas actuales
+<details>
+        <summary><strong>repos.py</strong> - Gestor de repositorios</summary>
+        <ul>
+            <li>Autenticación segura con token personal.</li>
+            <li>Lista todos los repositorios (públicos, privados y forks).</li>
+            <li>Permite cambiar la visibilidad de repos (privado ↔ público).</li>
+            <li>Interfaz colorida y clara desde la terminal.</li>
+            <li>Guarda logs y credenciales de forma segura.</li>
+        </ul>
+  </details>
 
-### `repos.py` - Gestor de repositorios
-- Autenticación segura con token personal.
-- Lista todos los repositorios (públicos, privados y forks).
-- Permite cambiar la visibilidad de repos (privado ↔ público).
-- Interfaz colorida y clara desde la terminal.
-- Guarda logs y credenciales de forma segura.
+<details>
+        <summary><strong>forks.py</strong> - Gestor de forks</summary>
+        <ul>
+            <li>Detecta automáticamente todos tus forks.</li>
+            <li>Permite eliminar forks de forma masiva o selectiva.</li>
+            <li>Usa las mismas credenciales guardadas.</li>
+            <li>Registro de acciones en el mismo archivo de logs.</li>
+        </ul>
+  </details>
 
-### `forks.py` - Gestor de forks
-- Detecta automáticamente todos tus forks.
-- Permite eliminar forks de forma masiva o selectiva.
-- Usa las mismas credenciales guardadas.
-- Registro de acciones en el mismo archivo de logs.
+  <details>
+        <summary><strong>stars-git.py</strong> - Gestor de Estrellas</summary>
+        <ul>
+            <li>Detecta a todos los repositorios a los cuales has dado estrellas.</li>
+            <li>permite Eliminar Estrellas a repositorios.</li>
+            <li>Usa las mismas credenciales guardadas.</li>
+            <li>Registro de acciones en el mismo archivo de logs.</li>
+        </ul>
+  </details>
 
-### `stars-git.py` - Gestor de Estrellas
-- Detecta a todos los repositorios a los cuales has dado estrellas.
-- permite Eliminar Estrellas a repositorios.
-- Usa las mismas credenciales guardadas
-- Registro de acciones en el mismo archivo de logs.
+<details>
+        <summary><strong>subir.py</strong> - Gestor de Comits</summary>
+        <ul>
+            <li>Detecta a tu sincronización ssh para subir cambios de una forma más rápida.</li>
+            <li>Deberás configurar tu clave ssh antes de usarlo.</li>
+        </ul>
+</details>
 
-### `subir.py` - Gestor de Comits
-- Detecta a tu sincronización ssh para subir csmbios de una forma más rapida.rapida.
-- Deberás configurar tu clave ssh antes de usarlo.
+<details>
+        <summary><strong>gh-cli-update</strong> - Actualiza binarios</summary>
+        <ul>
+            <li>Sincroniza los últimos binarios del repositorio en Termux.</li>
+        </ul>
+</details>
 
-### `gh-cli-update` - Actualiza binarios
-- Sincroniza los últimos binarios del repositorio en Termux.
-
-### `git-ssh` Configuración de clave ssh
-- Gebera tu clave única para activar ssh en github.
-
+<details>
+        <summary><strong>git-ssh</strong> - Configuración de clave ssh</summary>
+        <ul>
+            <li>Genera tu clave única para activar ssh en github.</li>
+            <li>Si eres nuevo en esto y ves la herramienta.... pronto sacaré video sencillo 2 o 3 días de como pegar la clave generada.</li>
+        </ul>
+</details>
 
 
 ## 🚀 Guía Rápida: Configurar `.gh-bins` en Termux
@@ -95,6 +118,7 @@ Herramientas en Python diseñadas para gestionar tu cuenta de GitHub directament
 
 ```bash
 repos     # Para gestionar visibilidad de repositorios
+
 forks     # Para eliminar forks
 
 stars-git # Gestor de Estrellas
