@@ -5,6 +5,8 @@
 - [✅ Herramientas actuales](#-herramientas-actuales)
   - [`repos.py` - Gestor de repositorios](#repospy---gestor-de-repositorios)
   - [`forks.py` - Gestor de forks](#forkspy---gestor-de-forks)
+  - [`stars-git.py` - Gestor de Estrellas](#stars-gitpy---gestor-de-estrellas)
+
 - [🚀 Guía Rápida: Configurar `.gh-bins` en Termux](#-guía-rápida-configurar-gh-bins-en-termux)
 - [🛠 Solución de problemas](#-solución-de-problemas)
 - [🧭 Uso](#-uso)
@@ -32,7 +34,7 @@ Herramientas en Python diseñadas para gestionar tu cuenta de GitHub directament
 - Usa las mismas credenciales guardadas.
 - Registro de acciones en el mismo archivo de logs.
 
-### `stars-git` - Gestor de Estrellas
+### `stars-git.py` - Gestor de Estrellas
 - Detecta a todos los repositorios a los cuales has dado estrellas.
 - permite Eliminar Estrellas a repositorios.
 - Usa las mismas credenciales guardadas
