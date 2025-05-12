@@ -3,11 +3,6 @@
 
 - [🛠️ GitHub Manager CLI Tools for Termux](#-github-manager-cli-tools-for-termux)
 - [✅ Herramientas actuales](#-herramientas-actuales)
-  - [`repos.py` - Gestor de repositorios](#repospy---gestor-de-repositorios)
-  - [`forks.py` - Gestor de forks](#forkspy---gestor-de-forks)
-  - [`stars-git.py` - Gestor de Estrellas](#stars-gitpy---gestor-de-estrellas)
-  - [`subir.py` - Gestor de comits](#subir.py---gestor-de-estrellas)
-
 - [🚀 Guía Rápida: Configurar `.gh-bins` en Termux](#-guía-rápida-configurar-gh-bins-en-termux)
 - [🛠 Solución de problemas](#-solución-de-problemas)
 - [🧭 Uso](#-uso)
